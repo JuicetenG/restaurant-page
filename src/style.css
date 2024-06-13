@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Futurama';
-  src: url('/fonts/fr-bold.ttf');
+  src: url('./fonts/fr-bold.ttf');
 }
 
 * {
@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-image: url('/images/store2.jpg');
+  background-image: url('./images/store2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -32,6 +32,17 @@ button {
   cursor: pointer;
   background-color: whitesmoke;
   opacity: 80%;
+}
+
+.clicked-button{
+  width: 220px;
+  height: 77px;
+  padding-top: 4px;
+  font-size: 34px;
+  border: none;
+  border-radius: 12px;
+  background-color: whitesmoke;
+  opacity: 100%;
 }
 
 button:hover {
@@ -62,13 +73,13 @@ nav {
 
 }
 
-#logo {
+.logo {
   width: 500px;
   height: 500px;
   opacity: 90%;
 }
 
-#logo-wrapper {
+.logo-wrapper {
   width: 535px;
   height: 535px;
   background-color: black;
