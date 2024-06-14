@@ -1,5 +1,7 @@
 import './style.css';
 import showHome from './home.js';
+import showMenu from './menu.js';
+import showAbout from './about.js';
 
 showHome();
 switchTabs();
@@ -30,8 +32,10 @@ function buttonEvents(e){
     showHome();
   } else if(e.target.value === 'menu') {
     menuButton.classList.add('clicked-button');
+    showMenu();
   } else if(e.target.value === 'about') {
-    aboutButton.classList.add('clicked-button'); 
+    aboutButton.classList.add('clicked-button');
+    showAbout(); 
   }
 }
 

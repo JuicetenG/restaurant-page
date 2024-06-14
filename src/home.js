@@ -1,9 +1,9 @@
 import Logo from './images/logo.jpg'
 
-export default function() {
+export default function showHome() {
   const contentDiv = document.querySelector('#content');
   const homeDiv = document.createElement('div');
-  homeDiv.classList.add('logo-wrapper');
+  homeDiv.classList.add('content-wrapper');
   
   const panucciLogo = new Image();
   panucciLogo.src = Logo; 
